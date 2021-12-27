@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "rohankalra.me/static/media/projects.3c953eb9.svg"
   },
   {
-    "revision": "5d2b639bb8bd10bbe877ef138d6a28f5",
+    "revision": "4765461cb4d31be933467d22fa8d5264",
     "url": "rohankalra.me/index.html"
   }
 ];

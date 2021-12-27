@@ -1,15 +1,15 @@
 {
-  "main.css": "rohankalra.me/static/css/main.04731468.chunk.css",
-  "main.js": "rohankalra.me/static/js/main.4fd22406.chunk.js",
-  "main.js.map": "rohankalra.me/static/js/main.4fd22406.chunk.js.map",
-  "static/js/1.caa30c5a.chunk.js": "rohankalra.me/static/js/1.caa30c5a.chunk.js",
-  "static/js/1.caa30c5a.chunk.js.map": "rohankalra.me/static/js/1.caa30c5a.chunk.js.map",
-  "runtime~main.js": "rohankalra.me/static/js/runtime~main.0c4de01e.js",
-  "runtime~main.js.map": "rohankalra.me/static/js/runtime~main.0c4de01e.js.map",
-  "static/media/about.svg": "rohankalra.me/static/media/about.2a87157d.svg",
-  "static/media/projects.svg": "rohankalra.me/static/media/projects.3c953eb9.svg",
-  "static/css/main.04731468.chunk.css.map": "rohankalra.me/static/css/main.04731468.chunk.css.map",
-  "index.html": "rohankalra.me/index.html",
-  "precache-manifest.270e89b63f2f0bceb53f628aea98093d.js": "rohankalra.me/precache-manifest.270e89b63f2f0bceb53f628aea98093d.js",
-  "service-worker.js": "rohankalra.me/service-worker.js"
+  "main.css": "/static/css/main.04731468.chunk.css",
+  "main.js": "/static/js/main.4fd22406.chunk.js",
+  "main.js.map": "/static/js/main.4fd22406.chunk.js.map",
+  "static/js/1.c6b55dd3.chunk.js": "/static/js/1.c6b55dd3.chunk.js",
+  "static/js/1.c6b55dd3.chunk.js.map": "/static/js/1.c6b55dd3.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/media/about.svg": "/static/media/about.2a87157d.svg",
+  "static/media/projects.svg": "/static/media/projects.3c953eb9.svg",
+  "static/css/main.04731468.chunk.css.map": "/static/css/main.04731468.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.0de8aea850eb026676885b9a5f7c6ef5.js": "/precache-manifest.0de8aea850eb026676885b9a5f7c6ef5.js",
+  "service-worker.js": "/service-worker.js"
 }

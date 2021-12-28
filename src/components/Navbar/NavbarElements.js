@@ -101,6 +101,26 @@ export const NavBtn = styled.nav`
     }
 `
 
+export const Btn = styled.a`
+    border-radius: 50px;
+    background: black;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &.hover {
+        transition: all 0.2s ease-in-out;
+        background: purple;
+        color: white;
+    }
+`
+
 export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
     background: black;

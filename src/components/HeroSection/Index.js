@@ -29,7 +29,7 @@ const onHover = () => {
                     Hey <Emoji symbol="👋"/>, I'm Rohan <Emoji symbol='🧑🏽‍💻'/>, a creative <Emoji symbol='💡'/> developer.
                 </HeroH1>
             <HeroP>
-                I love to think about, design, and execute new ideas.
+                I love to think of, design, and execute new ideas. 
             </HeroP>
                 <HeroBtnWrapper>
                 <Button to='about' onMouseEnter={onHover} onMouseLeave={onHover}

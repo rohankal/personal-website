@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {button}  from 'react'
 import { FaBars } from 'react-icons/fa'
 import {
     Nav, 
@@ -10,7 +10,11 @@ import {
     NavLinks,
     NavBtn,
     NavBtnLink,
+    Btn
 } from './NavbarElements.js'
+
+import PDF from "../../images/resume.pdf"
+import { pdfjs } from 'react-pdf'
 
 const Navbar = ({ toggle }) => {
     return (
@@ -36,7 +40,7 @@ const Navbar = ({ toggle }) => {
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to='/resume'>Resume</NavBtnLink>
+                    <Btn href={PDF} target="_blank">Resume</Btn>
                 </NavBtn>
             </NavbarContainer>    
         </Nav>

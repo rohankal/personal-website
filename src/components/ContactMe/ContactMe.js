@@ -19,13 +19,13 @@ const ContactMe = () => {
         console.log(result.text);
         Swal.fire({
           icon: 'success',
-          title: 'Message Sent Successfully'
+          title: 'i got your message, i\'ll get back to you soon'
         })
       }, (error) => {
         console.log(error.text);
         Swal.fire({
           icon: 'error',
-          title: 'Oops, something went wrong',
+          title: 'oops, something went wrong',
           text: error.text,
         })
       });

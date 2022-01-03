@@ -19,7 +19,7 @@ const Navbar = ({ toggle }) => {
         <>
         <Nav>
             <NavbarContainer>
-                <NavLogo to='/'>rohan kalra</NavLogo>
+                <NavLogo to='home' smooth={true} duration={500}>rohan kalra</NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars/>
                 </MobileIcon>

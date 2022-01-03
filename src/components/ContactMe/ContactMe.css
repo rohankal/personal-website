@@ -2,7 +2,16 @@
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
+  background-color: #af8057;
+  height: 981px;
+  align-items: center;
   justify-content: center;
+  display: flex;
+}
+
+h1 {
+  color: black;
+  margin-bottom: 50px;
 }
 
 input {
@@ -12,5 +21,25 @@ input {
 }
 
 button {
-  background-color: pink;
+  border-radius: 50px;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  border-color: black;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  margin-top: 50px;
+  padding: 14px 48px;
+  background: white;
+  color: #010606;
+  font-size: 20px;
+}
+
+form {
+  background-color: white;
+  padding: 150px;
+  border-radius: 100px;
+  z-index: 3;
 }

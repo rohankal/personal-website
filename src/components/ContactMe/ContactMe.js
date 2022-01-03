@@ -1,7 +1,8 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { Form, Input, Button } from 'semantic-ui-react';
+import { Form, Input, Button} from 'semantic-ui-react';
 import Swal from 'sweetalert2';
+
 
 import './ContactMe.css';
 
@@ -32,33 +33,35 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="ContactMe">
+    <div className="ContactMe"> 
+
       <Form onSubmit={handleOnSubmit}>
+        <h1>let's get in touch!</h1>
         <Form.Field
           control={Input}
-          label='Your Email'
+          label='your email'
           name='user_email'
-          placeholder='Email…'
+          placeholder='email…'
           required
           type="text"
         />
         <Form.Field
           control={Input}
-          label='Your Name'
+          label='your name'
           name='user_name'
-          placeholder='Name…'
+          placeholder='name…'
           required
           type='text'
         />
         <Form.Field
           control={Input}
-          label='Your Message'
+          label='your message'
           name='user_message'
-          placeholder='Message…'
+          placeholder='message…'
           required
           type='text'
         />
-        <Button type='submit'>Submit</Button>
+        <Button type='submit'>submit</Button>
       </Form>
     </div>
   );

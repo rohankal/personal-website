@@ -33,11 +33,14 @@ const InfoSection = ({id, topLine, lightText, headline, darkText, description, i
                     <Column1>
                         <TextWrapper>
                             <TopLine>student programmer</TopLine>
-                            <Heading lightText={lightText}>a little bit about me...</Heading>
-                            <Subtitle darkText={darkText}>i am a sophomore at the university of southern california, studyng computer science and business administration.</Subtitle>
+                            <Heading>a little bit about me...</Heading>
+                            <Subtitle>
+                                i am a sophomore at the university of southern california, studyng computer science and business administration. 
+                                i love to play basketball, read about and watch fictional alternate realities like harry potter, and code.
+                            </Subtitle>
                             <BtnWrap>
                                 <Button 
-                                    to='home'
+                                    to='contact'
                                     onMouseEnter={onHover} 
                                     onMouseLeave={onHover}
                                     smooth={true}
@@ -48,7 +51,7 @@ const InfoSection = ({id, topLine, lightText, headline, darkText, description, i
                                     primary={primary ? 1 : 0}
                                     dark={dark ? 1 : 0}
                                 >
-                                back to top { hover ? <ArrowForward/> : <ArrowRight/>}
+                                hmu (hit me up) { hover ? <ArrowForward/> : <ArrowRight/>}
                                 </Button>
                             </BtnWrap>
                         </TextWrapper>

@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Button } from '../ButtonElement'
+import { ArrowForward, ArrowRight } from '../HeroSection/HeroElements';
 import { 
     InfoContainer,
     InfoWrapper,
@@ -16,28 +17,39 @@ import {
  } from './InfoElements'
 
 
-const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, img, alt, primary, dark, dark2}) => {
+const InfoSection = ({id, topLine, lightText, headline, darkText, description, img, alt, primary, dark}) => {
+
+    const [ hover, setHover ] = useState(false);
+
+    const onHover = () => {
+        setHover(!hover)
+    }
+
     return (
         <>
-         <InfoContainer lightBg={lightBg} id={id}>
+         <InfoContainer id={id}>
             <InfoWrapper>
-                <InfoRow imgStart={imgStart}>
+                <InfoRow>
                     <Column1>
                         <TextWrapper>
-                            <TopLine>{topLine}</TopLine>
-                            <Heading lightText={lightText}>{headline}</Heading>
-                            <Subtitle darkText={darkText}>{description}</Subtitle>
+                            <TopLine>student programmer</TopLine>
+                            <Heading lightText={lightText}>a little bit about me...</Heading>
+                            <Subtitle darkText={darkText}>i am a sophomore at the university of southern california, studyng computer science and business administration.</Subtitle>
                             <BtnWrap>
-                                <Button to='home'
-                                smooth={true}
-                                duation={500}
-                                spy={true}
-                                exact='true'
-                                offset={-80}
-                                primary={primary ? 1 : 0}
-                                dark={dark ? 1 : 0}
-                                dark2={dark2 ? 1 : 0}
-                                >{buttonLabel}</Button>
+                                <Button 
+                                    to='home'
+                                    onMouseEnter={onHover} 
+                                    onMouseLeave={onHover}
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}
+                                    primary={primary ? 1 : 0}
+                                    dark={dark ? 1 : 0}
+                                >
+                                back to top { hover ? <ArrowForward/> : <ArrowRight/>}
+                                </Button>
                             </BtnWrap>
                         </TextWrapper>
                     </Column1>

@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
-    color: "FFF";
-    background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
+    color: "white";
+    background: white;
 
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -50,12 +50,12 @@ export const TextWrapper = styled.div`
 `
 
 export const TopLine = styled.p`
-    color: #FF63F9;
+    color: brown;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin-bottom: 16px;
 `
 
@@ -93,4 +93,5 @@ export const Img = styled.img`
     width: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+    border-radius: 100px;
 `

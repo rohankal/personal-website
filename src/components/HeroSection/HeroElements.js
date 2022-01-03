@@ -3,20 +3,22 @@ import styled from 'styled-components'
 import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 
 export const HeroContainer = styled.div`
-    background: #0c0c0c;
+    background: #A9A9A9;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 981px; 
+    height: 1081px; 
     position: relative;
     z-index: 1;
-
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
+    background-size: 400% 400%;
+    
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	
 	animation: gradient 3s ease infinite;
 	height: 100vh;
-    @keyframes gradient {
+    */
+    /* @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -25,11 +27,8 @@ export const HeroContainer = styled.div`
 	}
 	100% {
 		background-position: 0% 50%;
-	}
-}
-
-
-    /* Add :before styles */
+	}  
+}*/
 `
 
 export const HeroBg = styled.div`
@@ -57,10 +56,12 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    border-radius: 50px;
 `
 
 export const HeroH1 = styled.h1`
-    color: #fff;
+    color: black;
     font-size: 48px;
     text-align: center;
     max-width: 600px;
@@ -76,7 +77,7 @@ export const HeroH1 = styled.h1`
 
 export const HeroP = styled.p`
     margin-top: 24px;
-    color: #fff;
+    color: black;
     font-size: 24px;
     text-align: center;
     max-width: 600px;
@@ -89,7 +90,6 @@ export const HeroBtnWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     position: relative;
-
 `
 
 export const ArrowForward = styled(MdArrowForward)`

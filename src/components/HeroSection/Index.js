@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {Button} from '../ButtonElement'
 import {Emoji} from '../EmojiElement'
+import Video from "../../videos/brown.mp4"
 import {
     HeroContainer,
     HeroBg,
@@ -10,6 +11,7 @@ import {
     HeroBtnWrapper,
     ArrowForward,
     ArrowRight,
+    VideoBg,
 } from './HeroElements'
 
 const HeroSection = () => {
@@ -23,28 +25,32 @@ const onHover = () => {
     return (
         <HeroContainer id='home'>
             <HeroBg>
+                <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
             </HeroBg>
             <HeroContent>
                 <HeroH1>
-                    Hey <Emoji symbol="👋"/>, I'm Rohan <Emoji symbol='🧑🏽‍💻'/>, a creative <Emoji symbol='💡'/> developer.
+                    hey <Emoji symbol="👋"/>, i'm rohan <Emoji symbol='🧑🏽‍💻'/>, a creative <Emoji symbol='💡'/> developer.
                 </HeroH1>
-            <HeroP>
-                I love to think of, design, and execute new ideas. 
-            </HeroP>
+                <HeroP>
+                    i love to think of, design, and execute new ideas. 
+                </HeroP>
                 <HeroBtnWrapper>
-                <Button to='about' onMouseEnter={onHover} onMouseLeave={onHover}
-                    primary='true'
-                    dark='true'
-                    smooth={true}
-                    duation={500}
-                    spy={true}
-                    exact='true'
-                    offset={-80}
-                >
-                    About Me { hover ? <ArrowForward /> : <ArrowRight/> }
-                </Button>
-             </HeroBtnWrapper>
-        </HeroContent>
+                    <Button 
+                        to='about' 
+                        onMouseEnter={onHover} 
+                        onMouseLeave={onHover}
+                        primary='true'
+                        dark='true'
+                        smooth={true}
+                        duation={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
+                        >
+                        about me { hover ? <ArrowForward /> : <ArrowRight/> }
+                    </Button>
+                </HeroBtnWrapper>
+            </HeroContent>
         </HeroContainer>
         // <HeroContainer id='home'>
         //     <HeroBg>
